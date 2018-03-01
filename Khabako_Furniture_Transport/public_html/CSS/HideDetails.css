@@ -1,0 +1,12 @@
+/* 
+    Document   : HideDetails
+    Created on : 19 Apr 2015, 9:59:42 AM
+    Description:
+        Hides Details Field On Devices With Screen Widths Less Than 1200px
+*/
+#company-details
+{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

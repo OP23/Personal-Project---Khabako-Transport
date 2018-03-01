@@ -1,0 +1,78 @@
+/* 
+    Document   : MediumScreenDevices
+    Description:
+        Supports Devices With Widths Between 600px To 640px
+*/
+
+#main-container
+{
+    width: 90%;
+    margin: auto;
+}
+#logo
+{
+    width: 45%;
+    float: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}            
+#logo img
+{
+    width: 100%;
+}
+#company-name
+{
+    width: 50%;
+    float: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    margin-top: 10px !important;
+    height: 120px !important;
+    font-size: 1.0em;
+}
+#nav-div
+{
+    margin-top: 10px !important;
+    width: 75%;
+    margin: auto !important;
+}
+.navigation-bar
+{
+    width: 100% !important;
+    background-color: white;
+    clear: left !important;
+    height: 30px;
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 9px;
+}
+.img-div
+{
+    width: 16%;
+}
+.intro-img
+{
+    float: left;
+    width: 100%;
+}
+.intro-intro
+{
+    float: left;
+    width: 81%;
+    margin-top: 15px;
+    margin-left: 3%;
+    color: black;
+}
+
+#contact-table
+{
+    width: 100%;
+    float: none;
+    clear: left;
+}
+#contact-details
+{
+    width: 100%;
+    clear: left;
+}

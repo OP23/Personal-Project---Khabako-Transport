@@ -1,0 +1,84 @@
+/* 
+    Document   : SmallScreenDevices
+    Description:
+        Supports Devices With Widths Between 280px To 600px
+*/
+
+#main-container
+{
+    width: 100%;
+    margin: 0;
+}
+#logo img
+{
+    width: 100%;
+}
+#logo
+{
+    width: 60%;
+    float: none;
+    margin: auto !important;
+    overflow: hidden;
+    margin-top: 10px !important;
+}            
+#company-name
+{
+    width: 60%;
+    float: none;
+    margin: auto !important;
+    text-align: center;
+    margin-top: 10px !important;
+    height: 150px !important;
+    font-size: 1em;
+}
+#nav-div
+{
+    width: 75%;
+    margin: auto !important;
+    height: 180px;
+}
+.navigation-bar
+{
+    width: 100% !important;
+    background-color: white;
+    clear: left !important;
+    height: 30px;
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 9px; 
+}
+.img-div
+{
+    width: 50%;
+    float: none;
+    margin: auto !important;
+ }
+ .intro-img
+{
+    margin: auto !important;
+    width: 100%;
+}
+.intro-intro
+{
+    float: none;
+    clear: left;
+    width: 67%;
+    margin-top: 15px;
+    margin: auto !important;
+    color: black;
+}
+#contact-table
+{
+    width: 100%;
+    float: none;
+    clear: left;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#contact-details
+{
+    width: 100%;
+    clear: left;
+    padding-left: 0px;
+    padding-right: 0px;
+}

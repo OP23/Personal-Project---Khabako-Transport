@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="CSS/CSSMain.css" />
+        <link rel="stylesheet" media="screen and (min-width: 280px) and (max-width: 1200px)" href="CSS/HideDetails.css" />
+        <link rel="stylesheet" media="screen and (min-width: 280px) and (max-width: 600px)" href="CSS/SmallScreenDevices.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 640px)" href="CSS/MediumScreenDevices.css" />
+        
+        <script src="JS/TweenMax.js">
+        </script>
+        <script src="JS/jquery.js">
+        </script>
+        <script src="http://maps.googleapis.com/maps/api/js">
+        </script>
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="main-elements">
+                <div id="logo">
+                    <img src="Images/logo.jpg" alt="Logo" />
+                </div>
+                <div id="company-name">
+                    <h1>
+                        <span style="color: white;">KAHABAKO</span>
+                        <span style="color: yellow">TRANSPORT AND REMOVALS</span>
+                    </h1>
+                </div>
+                <div id="company-details">
+                    <img src="Images/South-Africa.png" style="width: 30%; margin-top: 10%; margin-left: 30%;" />
+                </div>
+            </div>
+            <div id="nav-div">
+                <div class="navigation-bar">
+                    <a href="index.html">Home</a>
+                </div>                
+                <div class="navigation-bar">
+                    <a href="about_us.html">About Us</a>
+                </div>                
+                <div class="navigation-bar">
+                    <a href="services.html">Services</a>
+                </div>                
+                <div class="navigation-bar" style="background-image: url(Images/nav_background.png);">
+                    <a href="Contact_Us.html">Contact Us</a>
+                </div>
+            </div>
+            <div id="slide-container">
+                <img src="Images/01.jpg" id="image-1" style="position: absolute; width: 100%; height: 100%; z-index: 6; opacity: 1" />
+                <img src="Images/09.jpg" id="image-2" style="position: absolute; width: 100%; height: 100%; z-index: 5; opacity: 0;" />
+                <img src="Images/21.jpg" id="image-3" style="position: absolute; width: 100%; height: 100%; z-index: 4; opacity: 0;" />
+                <img src="Images/25.jpg" id="image-4" style="position: absolute; width: 100%; height: 100%; z-index: 3; opacity: 0;" />
+                <img src="Images/23.jpg" id="image-5" style="position: absolute; width: 100%; height: 100%; z-index: 2; opacity: 0;" />
+                <img src="Images/24.jpg" id="image-6" style="position: absolute; width: 100%; height: 100%; z-index: 1; opacity: 0;" />                       
+                    <div style="margin-left: 5px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: black; cursor: pointer; z-index: 7;" id="playslide1">
+                    </div>
+                    <div style="margin-left: 25px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: white; cursor: pointer; z-index: 7;" id="playslide2">
+                    </div>
+                    <div style="margin-left: 45px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: white; cursor: pointer; z-index: 7;" id="playslide3">
+                    </div>
+                    <div style="margin-left: 65px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: white; cursor: pointer; z-index: 7;" id="playslide4">
+                    </div>
+                    <div style="margin-left: 85px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: white; cursor: pointer; z-index: 7;" id="playslide5">
+                    </div>
+                    <div style="margin-left: 105px; margin-top: 470px; height: 15px; width: 15px; border-radius: 50%; position: absolute; background-color: white; cursor: pointer; z-index: 7;" id="playslide6">
+                    </div>
+            </div>
+            <div id="welcome-div">
+                <div class="intro-header">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="intro-body">
+                        <form name="contactform" method="post" action="send_form_email.php">
+                            <table width="48%" id="contact-table">
+                                <tr>
+                                    <td valign="top" style="padding-bottom: 10px; font-size: 1.2em;">
+                                        <label for="first_name">First Name *</label>
+                                    </td>
+                                    <td valign="top" style="padding-bottom: 10px;">
+                                        <input  type="text" name="first_name" maxlength="50" size="30">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px; font-size: 1.2em;">
+                                        <label for="last_name">Last Name *</label>
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+                                        <input  type="text" name="last_name" maxlength="50" size="30">
+                                    </td>
+                                </tr>
+                                <tr style="padding-top: 10px;">
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px; font-size: 1.2em;">
+                                        <label for="email">Email Address *</label>
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+                                        <input  type="text" name="email" maxlength="80" size="30">
+                                    </td>
+                                </tr>
+                                <tr style="margin-top: 10px;">
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px; font-size: 1.2em;">
+                                        <label for="telephone">Telephone Number</label>
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px; font-size: 1.2em;">
+                                        <input  type="text" name="telephone" maxlength="30" size="30">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px; font-size: 1.2em;">
+                                        <label for="comments">Query *</label>
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+                                        <textarea  name="comments" maxlength="1000" cols="32" rows="20"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px;">
+                                        <input type="submit" value="Submit" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="contact-details">
+                                <h4 style="margin-bottom: 0px; float: left; margin-bottom: 5px;">Contact Number: </h4>
+                                <div style="float: left; margin-left: 10px;"><h4>---------- (SA Only)</h4></div>
+                                <div style="clear: left; margin-left: 140px;"><h4>OR</h4></div>
+                                <div style="clear: left; margin-left: 132px; margin-top: 5px;"><h4>---------- (SA Only)</h4></div>
+                                <h4 style="clear: left; float: left; margin-top: 20px;">Business Address: </h4>
+                                <div style="float: left; margin-left: 10px; margin-top: 20px;"><h4>68 Aerodrome Road</h4></div>
+                                <div style="clear: left; margin-left: 133px;"><h4>Johannesburg South</h4></div>
+                                <div style="clear: left; margin-left: 133px;"><h4>2013</h4></div>
+                                <div style="clear: left; margin-left: 133px;"><h4>South Africa</h4></div>
+                                <div id="googleMap" style="width:100%; height:370px; margin-top: 10px;"></div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>All Rights Reserved &copy;</p>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                var image1 = $("#image-1");
+                var image2 = $("#image-2");
+                var image3 = $("#image-3");
+                var image4 = $("#image-4");
+                var image5 = $("#image-5");
+                var image6 = $("#image-6");
+                
+                var slide = new TimelineMax({repeat: -1, repeatDelay: 2});
+                
+                slide.to(image1, 2, {opacity: 0, delay: 3})
+                     .to("#playslide1", 0, {backgroundColor: 'white'})
+                     .add("slide2")
+                     .to("#playslide2", 0, {backgroundColor: 'black'})
+                     .to(image2, 2, {opacity: 1})
+                     .to(image2, 2, {opacity: 0, delay: 3})
+                     .to("#playslide2", 0, {backgroundColor: 'white'})
+                     .add("slide3")
+                     .to("#playslide3", 0, {backgroundColor: 'black'})
+                     .to(image3, 2, {opacity: 1})
+                     .to(image3, 2, {opacity: 0, delay: 3})
+                     .to("#playslide3", 0, {backgroundColor: 'white'})
+                     .add("slide4")
+                     .to("#playslide4", 0, {backgroundColor: 'black'})
+                     .to(image4, 2, {opacity: 1})
+                     .to(image4, 2, {opacity: 0, delay: 3})
+                     .to("#playslide4", 0, {backgroundColor: 'white'})
+                     .add("slide5")
+                     .to("#playslide5", 0, {backgroundColor: 'black'})
+                     .to(image5, 2, {opacity: 1})
+                     .to(image5, 2, {opacity: 0, delay: 3})
+                     .to("#playslide5", 0, {backgroundColor: 'white'})
+                     .add("slide6")
+                     .to("#playslide6", 0, {backgroundColor: 'black'})
+                     .to(image6, 2, {opacity: 1})
+                     .to(image6, 2, {opacity: 0, delay: 3})
+                     .to("#playslide6", 0, {backgroundColor: 'white'})
+                     .add("slide1")
+                     .to("#playslide1", 0, {backgroundColor: 'black'})
+                     .to(image1, 2, {opacity: 1});
+             
+                $("#playslide1").click(function()
+                {
+                    slide.play("slide1");
+                });
+
+                $("#playslide2").click(function()
+                {
+                    slide.play("slide2");
+                });
+
+                $("#playslide3").click(function()
+                {
+                    slide.play("slide3");
+                });
+
+                $("#playslide4").click(function()
+                {
+                    slide.play("slide4");
+                });
+
+                $("#playslide5").click(function()
+                {
+                    slide.play("slide5");
+                });
+
+                $("#playslide6").click(function()
+                {
+                    slide.play("slide6");
+                });
+            });
+            
+            function initialize() {
+                var mapProp = 
+                {
+                    center:new google.maps.LatLng(-26.250680,27.971930),
+                    zoom:14,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </body>
+</html>

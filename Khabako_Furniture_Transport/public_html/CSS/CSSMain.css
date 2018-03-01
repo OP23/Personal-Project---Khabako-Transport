@@ -1,0 +1,202 @@
+/* 
+    Document   : CSSMain
+    Description:
+        The Main CSS Document Rendered
+*/
+
+*
+{
+    margin: 0;
+}
+body
+{
+    background-image: url(../Images/green_background.png);
+    background-repeat: no-repeat;
+}
+#main-container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#main-elements
+{
+    width: 100%;
+    height: auto;
+    height: 260px;
+}
+#logo
+{
+    margin-top: 15px;
+    float: left;
+    width: auto;
+    height: auto;
+}
+#company-name
+{
+    float: left;
+    margin-top: 15px;
+    width: 30%;
+    height: 236px;
+    margin-left: 5px;
+    font-size: 1.6em;
+}
+#company-details
+{
+    float: left;
+    height: 240px;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 37%;
+    color: white;
+}
+#contact-title
+{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+#contact-field-value-float
+{
+    float: left;
+    width: 45%;
+}
+.contact-field-value-clear
+{
+    margin-left: 25%;
+    clear: left;
+    width: 45%;
+}
+#address-title
+{
+    clear: left;
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+}
+#address-field-value-float
+{
+    float: left;
+    width: 45%;
+    margin-top: 20px;
+}
+.address-field-value-clear
+{
+    margin-left: 25%;
+    width: 45%;
+    clear: left;
+}
+.navigation-bar
+{
+    width: 25%;
+    background-color: white;
+    float: left;
+    height: 40px;
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 10px;
+}
+.navigation-bar a
+{
+    color: black;
+    text-decoration: none;
+}
+#nav-div
+{
+    width: 100%; 
+    height: 50px; 
+    margin-top: 20px; 
+    clear: left; 
+    background-color: white;
+}
+#slide-container
+{
+    position: relative;
+    overflow: hidden;
+    clear: left;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+#welcome-div, #about-us
+{
+    clear: left;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.intro-header
+{
+    width: 100%;
+    background-color: rgb(43, 157, 86);
+    padding: 5px;
+}
+.intro-body
+{
+    clear: left;
+    width: 100%;
+    height: auto;
+}
+.intro-header h1
+{
+    color: white;
+}
+.img-div
+{
+    float: left;
+    width: 10%;
+}
+.intro-img
+{
+    width: 100%;
+}
+.intro-intro
+{
+    float: left;
+    width: 87%;
+    margin-top: 15px;
+    margin-left: 3%;
+    color: black;
+    font-size: 1.1em;
+}
+#service-div
+{
+    clear: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+#footer
+{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: rgb(43, 157, 86);
+}
+#footer p
+{
+    color: white;
+}
+
+#contact-table
+{
+    margin-top: 40px; 
+    float: left; 
+    background-color: rgba(43, 157, 86, 0.4); 
+    padding: 15px;
+}
+
+#contact-details
+{
+    float: right; 
+    width: 45%; 
+    height: 560px; 
+    margin-top: 40px; 
+    background-color: rgba(43, 157, 86, 0.4); 
+    padding: 15px;
+}
